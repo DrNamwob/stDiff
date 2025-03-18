@@ -83,7 +83,14 @@ class TimestepEmbedder(nn.Module):
         t_freq = self.timestep_embedding(t, self.frequency_embedding_size)
         t_emb = self.mlp(t_freq)
         return t_emb
-   
+
+
+
+    
+def modulate(x, shift, scale):
+
+    res = x * (1 + scale) + shift
+    return res
 class DiTblock(nn.Module):
     # adaBN -> attn -> mlp
     def __init__(self,
