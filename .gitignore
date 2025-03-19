@@ -1,4 +1,9 @@
 DEREK/LiverFibrosisData
+DEREK/CellPhoneDB
+DEREK/example_results/
+stDiff/stDiff/DEREK/example_results
+stDiff/stDiff/DEREK/example_results/demo.pt
+stDiff/DEREK/example_results/demo.pt
 __pycache__/
 **/__pycache__
 **/**/__pycache__
